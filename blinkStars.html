@@ -3,37 +3,57 @@
 <style>
 
   .stars  {
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 100px solid rgb(230, 252, 152);
+      margin: 50px 0;
       position: relative;
+      display: block;
+      color: rgb(246, 248, 149);
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid rgb(246, 248, 149);
+      border-left: 100px solid transparent;
+      transform: rotate(35deg);
     }
-    #stars:after {
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-top: 100px solid rgb(230, 252, 152);
+    #star-five:before {
+      border-bottom: 80px solid rgb(246, 248, 149);
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
       position: absolute;
-      content: "";
-      top: 30px;
-      left: -50px;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #star-five:after {
+      position: absolute;
+      display: block;
+      color: rgb(246, 248, 149);
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid rgb(246, 248, 149);
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
     }
 
   .star-1 {
     margin-top: 15%;
     margin-left: 40%;
     animation-name: twinkle-1;
-    animation-duration: 1s;
+    animation-duration: infinate;
   }
 
   .star-2 {
     margin-top: 25%;
     margin-left: 25%;
     animation-name: twinkle-2;
-    animation-duration: 1s;
+    animation-duration: infinate;
   }
 
   @keyframes twinkle-1 {
